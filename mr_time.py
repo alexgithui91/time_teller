@@ -1,3 +1,4 @@
+import calendar
 from datetime import datetime
 from datetime import date
 
@@ -38,9 +39,17 @@ def breakdown_2():
     print(pg_break)
 
 
+def display_calendar():
+    print(pg_break)
+    year = date.today().year
+    month = date.today().month
+    print(calendar.month(year, month))
+
+
 def main():
     breakdown_1()
     breakdown_2()
+    display_calendar()
 
 
 if __name__ == "__main__":
