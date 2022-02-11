@@ -4,7 +4,6 @@ from datetime import datetime
 """
 Tell us the current datetime as : 09:00 AM Monday 3 August 2022
 Tell us the number of days, hours, minutes and seconds to end of year
-See if it is possible to get Kenyan Holiday Calendar
 """
 
 time_now = datetime.now()
@@ -21,18 +20,12 @@ def breakdown_1(time_now):
 
 
 def breakdown_2(time_now):
-    print(pg_break)
-    print(datetime.datetime("2022-12-31 23:59:59"))
-
-
-def breakdown_3():
     pass
 
 
 def main():
     breakdown_1(time_now)
     breakdown_2(time_now)
-    # breakdown_3()
 
 
 if __name__ == "__main__":
