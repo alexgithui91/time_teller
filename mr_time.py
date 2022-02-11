@@ -6,7 +6,7 @@ Tell us the current datetime as : 09:00 AM Monday 3 August 2022
 Tell us the number of days, hours, minutes and seconds to end of year
 """
 
-pg_break = "*" * 50
+pg_break = "*" * 70
 
 
 def breakdown_1():
@@ -19,6 +19,7 @@ def breakdown_1():
 
 
 def breakdown_2():
+    print(pg_break)
     t1 = datetime(
         year=date.today().year,
         month=date.today().month,
@@ -27,10 +28,14 @@ def breakdown_2():
         minute=int(datetime.now().strftime("%M")),
         second=int(datetime.now().strftime("%S")),
     )
+
     t2 = datetime(
         year=date.today().year, month=12, day=31, hour=23, minute=59, second=59
     )
-    print("End year (days/hours/minutes/seconds) : " + str(t2 - t1))
+
+    print("End Year (days/hours/minutes/seconds) : " + str(t2 - t1))
+
+    print(pg_break)
 
 
 def main():
